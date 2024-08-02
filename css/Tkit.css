@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* .top_option 영역 */
+
+.top_option{
+    width: 100vw;
+    height: 100px;
+    /* border: 1px solid black; */
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.top_option_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.top_option_icon li{
+    width: 25%;
+}
+.top_option_icon li a{
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    margin: 0 auto;
+    padding: 40px 0;
+    transition: all 0.3s;
+}
+
+.top_option_icon li a:hover{
+    background-color: rgb(0, 22, 117);
+}
+
+a.top_icon1{
+    background-image: url(../img/홈.png);
+}
+a.top_icon2{
+    background-image: url(../img/서치.png);
+}
+a.top_icon3{
+    background-image: url(../img/커뮤니티.png);
+}
+a.top_icon4{
+    background-image: url(../img/설정.png);
+}
+
+/* .top_search 영역 */
+
+.top_search{
+    width: 100vw;
+    height: 120px;
+    background-color: rgb(0, 20, 65);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    transition: all 0.3s;
+    z-index: 20;
+}
+
+.search_bar{
+    width: 70%;
+    height: 60px;
+    position: relative;
+}
+
+.search_bar input{
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-indent: 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    
+}
+
+.top_search_bicon{}
+.top_search_bicon a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/서치\ 검정.png) center center /100%;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+
+.top_search_modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* header 영역 */
+
+.header{
+    width: 100vw;
+    /* height: 470px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.head_up{
+    width: 100vw;
+    height: 220px;
+    background-color: rgb(77, 157, 248);
+    position: relative;
+}
+
+.h_logo{}
+.h_logo a{}
+.h_logo a img{
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+
+/* 삼선버튼 설정 */
+
+.t_button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.line{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.line_move{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.5s 0.5s;
+}
+
+.line_move div{
+    height: 4px;
+    width: 70%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.line_move.act{
+    transform: rotate(45deg);
+}
+
+.line .line_move div:nth-child(1){
+    transition: all 0.5s;
+}
+.line .line_move.act div:nth-child(1){
+    transform: translateY(9px) rotate(90deg);
+}
+
+.line .line_move div:nth-child(2){
+    opacity: 1;
+    transition: all 0.5s;
+}
+.line .line_move.act div:nth-child(2){
+    opacity: 0;
+}
+
+.line .line_move div:nth-child(3){
+    transition: all 0.5s;
+}
+.line .line_move.act div:nth-child(3){
+    transform: translateY(-9px);
+}
+
+/* 헤더 메인메뉴 영역(모바일) */
+
+.head_down{
+    width: 100vw;
+    /* height: 250px; */
+    background-color: yellow;
+}
+
+.h_mainmenu{}
+.h_mainmenu>li{}
+.h_mainmenu>li>a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5%;
+    transition: all 0.3s;
+}
+
+.h_mainmenu>li:hover>a{
+    padding-left: 8%;
+}
+
+.mainmenu1{
+    background-image: linear-gradient(rgb(135, 201, 255), rgb(0, 153, 255));
+}
+.mainmenu2{
+    background-image: linear-gradient(rgb(135, 201, 255), rgb(0, 153, 255));
+}
+.mainmenu3{
+    background-image: linear-gradient(rgb(135, 201, 255), rgb(0, 153, 255));
+}
+.mainmenu4{
+    background-image: linear-gradient(rgb(135, 201, 255), rgb(0, 153, 255));
+}
+.mainmenu5{
+    background-image: linear-gradient(rgb(135, 201, 255), rgb(0, 153, 255));
+}
+
+.sub{
+    display: none;
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    padding-left: 5%;
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(0, 52, 82);
+    color: rgb(105, 105, 105);
+    border-bottom: 1px solid white;
+}
+
+.sub li a:hover{
+    color: rgb(192, 192, 192);
+}
+
+.sub li a.border_none{
+    border-bottom: none;
+}
+/* PC용 */
+
+@media screen and (min-width: 960px){
+    .top_option{
+        display: none;
+    }
+
+    .t_button{
+        display: none;
+    }
+
+    
+}

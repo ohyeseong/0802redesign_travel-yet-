@@ -1,0 +1,37 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'ONE-Mobile-POP';
+    width: 100vw;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+table{
+    border-collapse: collapse;
+}
+
+img{
+    vertical-align: bottom;
+}
