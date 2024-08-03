@@ -16,96 +16,274 @@
     <script src="js/Tkit.js"></script>
 </head>
 <body>
-    <!-- .top_option 영역 -->
-    <div class="top_option">
-        <ul class="top_option_icon">
-            <li><a href="#" class="top_icon1">아이콘1</a></li>
-            <li><a href="#" class="top_icon2">아이콘2</a></li>
-            <li><a href="#" class="top_icon3">아이콘3</a></li>
-            <li><a href="#" class="top_icon4">아이콘4</a></li>
-        </ul><!-- top_option_icon -->
-    </div><!-- top_option -->
-
-    <!-- .top_search 영역 -->
-    <div class="top_search">
-        <div class="search_bar">
-            <input type="text" placeholder="검색어를 입력해주세요">
-            <div class="top_search_bicon">
-                <a href="#">서치 검정</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="top_search_modal"></div>
-
-    <!-- header 영역(모바일) -->
-    <header class="header">
-        <div class="head_up">
-            <div class="h_logo"><a href="#"><img src="img/로고.png" alt=""></a></div>
-            <!-- 삼선버튼 설정 -->
-            <div class="t_button">
-                <div class="line">
-                    <div class="line_move">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
+    <div class="wrap">
+        <!-- .top_option 영역 -->
+        <div class="top_option">
+            <ul class="top_option_icon">
+                <li><a href="#" class="top_icon1">아이콘1</a></li>
+                <li><a href="#" class="top_icon2">아이콘2</a></li>
+                <li><a href="#" class="top_icon3">아이콘3</a></li>
+                <li><a href="#" class="top_icon4">아이콘4</a></li>
+            </ul><!-- top_option_icon -->
+        </div><!-- top_option -->
+    
+        <!-- .top_search 영역 -->
+        <div class="top_search">
+            <div class="search_bar">
+                <input type="text" placeholder="검색어를 입력해주세요">
+                <div class="top_search_bicon">
+                    <a href="#">서치 검정</a>
                 </div>
             </div>
-        </div><!-- head_up -->
-
-        <!-- 헤더 메인메뉴 영역(모바일) -->
-        <div class="head_down">
-            <ul class="h_mainmenu">
-                <li>
-                    <a href="#" class="mainmenu1">내 여행</a>
-                    <ul class="sub">
-                        <li><a href="#">여행조회</a></li>
-                        <li><a href="#">일정관리</a></li>
-                        <li><a href="#">마이페이지</a></li>
-                        <li><a href="#" class="border_none">여행등록</a></li>
-                    </ul>
+        </div>
+    
+        <div class="top_search_modal"></div>
+    
+        <!-- header 영역(모바일) -->
+        <header class="header">
+            <div class="head_up">
+                <div class="h_logo"><a href="#"><img src="img/로고.png" alt=""></a></div>
+                <!-- 삼선버튼 설정 -->
+                <div class="t_button">
+                    <div class="line">
+                        <div class="line_move">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- head_up -->
+    
+            <!-- 헤더 메인메뉴 영역(모바일) -->
+            <div class="head_down">
+                <ul class="h_mainmenu">
+                    <li>
+                        <a href="#" class="mainmenu1">내 여행</a>
+                        <ul class="sub">
+                            <li><a href="#">여행조회</a></li>
+                            <li><a href="#">일정관리</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#" class="border_none">여행등록</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu2">여행 상품 / 추천</a>
+                        <ul class="sub">
+                            <li><a href="#">여행지별 추천상품</a></li>
+                            <li><a href="#">숙소 추천</a></li>
+                            <li><a href="#">코스 패키지 추천</a></li>
+                            <li><a href="#" class="border_none">일정별 추천 상품</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu3">예약하기</a>
+                        <ul class="sub">
+                            <li><a href="#">여행지 예약</a></li>
+                            <li><a href="#">예약 조회</a></li>
+                            <li><a href="#" class="border_none">예약 취소 및 환불</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu4">둘러보기</a>
+                        <ul class="sub">
+                            <li><a href="#">커뮤니티</a></li>
+                            <li><a href="#">여행기 리뷰</a></li>
+                            <li><a href="#">여행기 작성</a></li>
+                            <li><a href="#">미리보기</a></li>
+                            <li><a href="#" class="border_none">문의사항</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="mainmenu5">여행 경비</a>
+                        <ul class="sub">
+                            <li><a href="#">여행경비 조회</a></li>
+                            <li><a href="#" class="border_none">마일리지 혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- head_down -->
+        </header><!-- header -->
+    
+        <!-- header 영역(PC) -->
+        <header class="header_pc">
+            <h1 class="logo_pc"><a href="#"><img src="img/로고.png" alt=""></a></h1>
+    
+            <nav class="nav_pc">
+                <ul class="mainmenu_pc">
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">내 여행</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">여행조회</a></li>
+                            <li><a href="#">일정관리</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">여행등록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">여행 상품 / 추천</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">여행지별 상품 추천</a></li>
+                            <li><a href="#">숙소 추천</a></li>
+                            <li><a href="#">코스 패키지 추천</a></li>
+                            <li><a href="#">일정별 추천 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">예약하기</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">여행지 예약</a></li>
+                            <li><a href="#">예약조회</a></li>
+                            <li><a href="#">예약 취소 및 환불</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc"></div>
+                        <a href="#">둘러보기</a>
+                        <ul class="sub_pc sub_ar">
+                            <li><a href="#">커뮤니티</a></li>
+                            <li><a href="#">여행기 리뷰</a></li>
+                            <li><a href="#">여행기 작성</a></li>
+                            <li><a href="#">미리보기</a></li>
+                            <li><a href="#">문의사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="line_pc .sub_ar"></div>
+                        <a href="#">여행 경비</a>
+                        <ul class="sub_pc">
+                            <li><a href="#">여행 경비 조회</a></li>
+                            <li><a href="#">마일리지 혜택</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- mainmenu_pc -->
+            </nav><!-- nav_pc -->
+    
+            <div class="sub_pc_bg .sub_ar"></div>
+    
+            <div class="login_pc">
+                <div class="login_title_pc">
+                    <div><a href="#">로그인</a></div>
+                    <div><a href="#">회원가입</a></div>
+                </div>
+            </div><!-- login_pc -->
+        </header><!-- header_pc -->
+    
+        <!-- .img_slide 영역(PC) -->
+        <div class="img_slide_pc">
+            <ul class="slider-for">
+                <li class="img_pc1">
+                        <h2>동남아에서 즐기는 SUMMER TOUR</h2>
+                        <p>코스 50% 할인 이벤트</p>
                 </li>
-
-                <li>
-                    <a href="#" class="mainmenu2">여행 상품 / 추천</a>
-                    <ul class="sub">
-                        <li><a href="#">여행지별 추천상품</a></li>
-                        <li><a href="#">숙소 추천</a></li>
-                        <li><a href="#">코스 패키지 추천</a></li>
-                        <li><a href="#" class="border_none">일정별 추천 상품</a></li>
-                    </ul>
+    
+                <li class="img_pc2">
+                        <h2>이탈리아 여행 트립팩 30% 할인</h2>
+                        <p>트리머니 마일리지 적립</p>
                 </li>
-
-                <li>
-                    <a href="#" class="mainmenu3">예약하기</a>
-                    <ul class="sub">
-                        <li><a href="#">여행지 예약</a></li>
-                        <li><a href="#">예약 조회</a></li>
-                        <li><a href="#" class="border_none">예약 취소 및 환불</a></li>
-                    </ul>
+    
+                <li class="img_pc3">
+                        <h2>필리핀 보라카이</h2>
+                        <p>Tkit 마일리지 10% 적립</p>
                 </li>
-
-                <li>
-                    <a href="#" class="mainmenu4">둘러보기</a>
-                    <ul class="sub">
-                        <li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">여행기 리뷰</a></li>
-                        <li><a href="#">여행기 작성</a></li>
-                        <li><a href="#">미리보기</a></li>
-                        <li><a href="#" class="border_none">문의사항</a></li>
-                    </ul>
+    
+                <li class="img_pc4">
+                        <h2>남부 에버 화이트 투어</h2>
+                        <p>코스 A / B</p>
                 </li>
-
-                <li>
-                    <a href="#" class="mainmenu5">여행 경비</a>
-                    <ul class="sub">
-                        <li><a href="#">여행경비 조회</a></li>
-                        <li><a href="#" class="border_none">마일리지 혜택</a></li>
-                    </ul>
+    
+                <li class="img_pc5">
+                        <h2>아이슬란드 딮코스 나이트팩</h2>
+                        <p>Tkit 마일리지 10% 적립</p>
+    
                 </li>
+            </ul><!-- slide_list_pc -->
+    
+            <button class="slide_baro_btn_pc">예약하기</button>
+        </div><!-- img_slide_pc -->
+    
+        <!-- 이미지 슬라이드 동기화 모드pc형 -->
+        <div class="img_slide_mode">
+            <ul class="slider-nav">
+                <li><a href="#" class="mode_img1">이미지1</a></li>
+                <li><a href="#" class="mode_img2">이미지1</a></li>
+                <li><a href="#" class="mode_img3">이미지1</a></li>
+                <li><a href="#" class="mode_img4">이미지1</a></li>
+                <li><a href="#" class="mode_img5">이미지1</a></li>
             </ul>
-        </div><!-- head_down -->
-    </header><!-- header -->
+        </div>
+        <!-- img_slide_mode -->
+        
+        <!-- skill 모바일형 -->
+        <div class="skill">
+            <div class="skill_title">
+                <p>여행에 필요한 모든것을 Tkit에서! <br>여행계획을 더 간편하게 관리</p>
+            </div>
+    
+            <div class="skill_cont">
+                <div class="skill_cont1">
+                    <div class="skill_list">
+                        <p>일정체크</p>   
+                        <div class="skill_img1 skill_img">
+                            이미지
+                            <div class="skill_modal"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill_cont2">
+                    <div class="skill_list">
+                        <p>나만의 여행플랜</p> 
+                        <div class="skill_img2 skill_img">
+                            이미지
+                            <div class="skill_modal"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill_cont3">
+                    <div class="skill_list">
+                        <p>여행경비 확인</p> 
+                        <div class="skill_img3 skill_img">
+                            이미지
+                            <div class="skill_modal"></div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div><!-- skill_cont -->
+        </div><!-- skill -->
+
+        <!-- 이미지 슬라이드 모바일형 -->
+        <div class="img_slide_m">
+            <ul class="slide_list_m">
+                <li>
+                    <a href="#" class="slide_img_m1">이미지</a>
+                </li>
+
+                <li><a href="#" class="slide_img_m2">이미지</a></li>
+                
+                <li><a href="#" class="slide_img_m3">이미지</a></li>
+                
+                <li><a href="#" class="slide_img_m4">이미지</a></li>
+                
+                <li><a href="#" class="slide_img_m5">이미지</a></li>
+            </ul>
+
+            <div class="slide_bg_m"></div>
+
+            <button class="slide_bar_m">
+                예약하기
+            </button>
+        </div><!-- img_slide_m -->
+    </div><!-- wrap -->
+
 </body>
 </html>
