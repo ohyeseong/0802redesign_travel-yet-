@@ -72,7 +72,7 @@ a.top_icon4{
     align-items: center;
     /* display: none; */
     transition: all 0.3s;
-    z-index: 140;
+    z-index: 600;
     box-shadow: 0 5px 5px black;
 }
 
@@ -107,13 +107,14 @@ a.top_icon4{
 
 .top_search_modal{
     width: 100vw;
-    height: 100rem;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
+    z-index: 500;
 }
 
 /* header 영역 */
@@ -409,6 +410,7 @@ a.top_icon4{
     height: 600px;
     position: relative;
     margin-top: 150px;
+    box-shadow: 0 5px 5px black;
 }
 
 .slider-for{
@@ -567,7 +569,7 @@ a.mode_img5{
     border: none;
     text-indent: -9999px;
     cursor: pointer;
-    box-shadow: 0 4px 5px black;
+    box-shadow: 4px 4px 5px black;
 }
 
 .slider-nav .slick-arrow:hover{
@@ -660,6 +662,7 @@ a.mode_img5{
     width: 100%;
     height: 400px;
     background-color: gray;
+    position: relative;
 }
 
 .slide_list_m{
@@ -667,7 +670,11 @@ a.mode_img5{
     position: relative;
 }
 
-.slide_list_m li{}
+.slide_list_m li{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
 
 .slide_list_m li a{
     display: block;
@@ -719,6 +726,50 @@ a.slide_img_m5{
 }
 .slide_list_m .slick-arrow.slick-next{
     right: 20px;
+}
+
+.slide_list_m li h3{
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    font-size: 30px;
+    color: white;
+    z-index: 202;
+}
+
+.slide_list_m li p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 202;
+}
+
+.slide_bg_m{
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 201;
+}
+
+.slide_btn_m{
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border: 3px solid black;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: all 0.3s;
+}
+
+.slide_btn_m:hover{
+    background-color: orange;
+    color: white;
 }
 
 /* 모바일용 */
@@ -777,5 +828,9 @@ a.slide_img_m5{
     .skill_img{
         width: 200px;
         height: 200px;
+    }
+
+    .img_slide_m{
+        display: none;
     }
 }
